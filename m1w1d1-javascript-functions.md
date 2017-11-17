@@ -73,7 +73,7 @@ var square = function(n) {
 
 The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The`show_props()`function \(defined in[Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Objects_and_Properties)\) is an example of a function that takes an object as an argument.
 
-## JavaScript built-in Methods\* \(Methods of the constructors\)
+## JavaScript built-in Methods\* \(Methods of the global constructors\)
 
 * [Math Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) ex. Math.floor\(\), Math.random\(\), Math.max\(\), Math.min\(\)
 * [Number Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ex isNaN\(\), parseFloat\(\), parseInt\(\), toFixed\(\), toString\(\)
