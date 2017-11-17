@@ -12,7 +12,7 @@ Functions are one of the fundamental building blocks in JavaScript. A function i
 
 ### Function declarations {#Function_declarations}
 
-A **function definition **\(also called a **function declaration**, or **function statement**\) consists of the[`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)keyword, followed by:
+A **function definition **\(also called a **function declaration**, or **function statement**\) consists of the function keyword, followed by:
 
 * The name of the function.
 * A list of parameters to the function, enclosed in parentheses and separated by commas.
@@ -34,7 +34,7 @@ return number * number;
 
 ### Function expressions {#Function_expressions}
 
-While the function declaration above is syntactically a statement, functions can also be created by a [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function). Such a function can be **anonymous**; it does not have to have a name. For example, the function`square`could have been defined as:
+While the function declaration above is syntactically a statement, functions can also be created by a function expression. Such a function can be **anonymous**; it does not have to have a name. For example, the function`square`could have been defined as:
 
 ```js
 var square = function (number) {
@@ -47,7 +47,7 @@ var x = square(4);
 
 ### Calling functions
 
-Defining a function does not execute it. Defining the function simply names the function and specifies what to do when the function is called.**Calling**the function actually performs the specified actions with the indicated parameters. For example, if you define the function`square`, you could call it as follows:
+**Defining a function does not execute it**. Defining the function simply names the function and specifies what to do when the function is called. **Calling **the function actually performs the specified actions with the indicated parameters. For example, if you define the function`square`, you could call it as follows:
 
 ```js
 square(5);
@@ -75,7 +75,7 @@ var square = function(n) {
 }
 ```
 
-The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The`show_props()`function \(defined in[Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Objects_and_Properties)\) is an example of a function that takes an object as an argument.
+The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The `show_props()`function \(defined in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Objects_and_Properties)\) is an example of a function that takes an object as an argument.
 
 ## JavaScript built-in Methods\* \(Methods of the global constructors\)
 
