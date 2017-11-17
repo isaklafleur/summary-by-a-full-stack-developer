@@ -1,5 +1,6 @@
 # Summary
 
 * [Introduction](readme.md)
-* [Basic HTML](basic-html.md)
+* [M1.W1.D1-Basic HTML](m1w1d1-basic-html.md)
+* [M1.W1.D1-Basic CSS](m1w1d1-basic-css.md)
 
