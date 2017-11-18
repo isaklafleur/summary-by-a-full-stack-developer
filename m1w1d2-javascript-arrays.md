@@ -6,8 +6,6 @@
 
 JavaScript arrays are used to store multiple values in a single variable.
 
-
-
 ```js
 // Example
 
@@ -105,7 +103,7 @@ var pos = fruits.indexOf('Banana');
 
 ```js
 var removedItem = fruits.splice(pos, 1); // this is how to remove an item
-                                        
+
 // ["Strawberry", "Mango"]
 ```
 
@@ -140,7 +138,7 @@ var shallowCopy = fruits.slice(); // this is how to make a copy
 
 ### Accessing array elements {#Accessing_array_elements}
 
-JavaScript arrays are zero-indexed: **the first element of an array is at index`0`**, and the last element is at the index equal to the value of the array's[`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)property minus 1. Using an invalid index number returns`undefined`.
+JavaScript arrays are zero-indexed: **the first element of an array is at index**`0`, and the last element is at the index equal to the value of the array's[`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)property minus 1. Using an invalid index number returns`undefined`.
 
 ```js
 var arr = ['this is the first element', 'this is the second element'];
@@ -196,5 +194,33 @@ arr.forEach(function(element) {
 
 `index`: The index of the current element being processed in the array.
 
-`array`: The array that `forEach()`is being applied to
+`array`: The array that `forEach()`is being applied to
+
+
+
+### Converting from for to forEach {#Converting_from_for_to_forEach}
+
+before
+
+```js
+const items = ['item1', 'item2', 'item3'];
+const copy = [];
+
+for (let i=0; i<items.length; i++) {
+  copy.push(items[i])
+}
+```
+
+after
+
+```js
+const items = ['item1', 'item2', 'item3'];
+const copy = [];
+
+items.forEach(function(item){
+  copy.push(item)
+});
+```
+
+
 
