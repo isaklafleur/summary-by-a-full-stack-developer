@@ -7,4 +7,5 @@
 * [M1.W1.D2 JavaScript Functions](m1w1d1-javascript-functions.md)
 * [M1.W1.D2 JavaScript Arrays](m1w1d2-javascript-arrays.md)
 * [M1.W1.D2 CSS Box Model](m1w1d2-css-box-model.md)
+* [M1W1D2 CSS Position Properties](m1w1d2-css-position-properties.md)
 
