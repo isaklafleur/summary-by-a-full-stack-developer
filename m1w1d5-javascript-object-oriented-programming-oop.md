@@ -61,5 +61,17 @@ Test.prototype.y = function() { ... }
 // etc.
 ```
 
+
+
+#### Object.create\(\) {#objectcreate}
+
+The Object.create\(\) method creates a new object with the specified prototype object and properties. The method will return a new object with the specified prototype object and properties.
+
+As we can see in our example, when we call`Object.create()`giving the `Animal.protoype` as an argument our`Dog.prototype` will be created with`Animal` prototype and properties.
+
+After this, we call`Dog.prototype.constructor = Dog` so the the Dog objects will take the Dog’s constructor as default instead of Animal’s
+
+
+
 [Recommended read of OOP in JavaScript](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 
