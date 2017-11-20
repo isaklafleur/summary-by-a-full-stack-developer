@@ -31,7 +31,7 @@ person.bio() // function() {...}
 person.greeting() // function() {...}
 ```
 
-So what is going on here? Well, an object is made up of multiple members, each of which has a name \(e.g.`name `and `age `above\), and a value \(e.g.`['Bob', 'Smith'] `and `32`\). Each name/value pair must be separated by a comma, and the name and value in each case are separated by a colon. The syntax always follows this pattern:
+So what is going on here? Well, an object is made up of multiple members, each of which has a name \(e.g.`name`and `age`above\), and a value \(e.g.`['Bob', 'Smith']`and `32`\). Each name/value pair must be separated by a comma, and the name and value in each case are separated by a colon. The syntax always follows this pattern:
 
 ```js
 var objectName = {
@@ -74,7 +74,6 @@ Setting members doesn't just stop at updating the values of existing properties 
 ```js
 person['eyes'] = 'hazel';
 person.farewell = function() { alert("Bye everybody!"); }
-
 ```
 
 ## A few Object Methods
@@ -123,6 +122,8 @@ console.log(Object.keys(obj)); // console: ['0', '1', '2']
 var anObj = { 100: 'a', 2: 'b', 7: 'c' };
 console.log(Object.keys(anObj)); // ['2', '7', '100']
 ```
+
+
 
 
 
