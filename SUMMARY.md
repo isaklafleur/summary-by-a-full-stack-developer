@@ -12,5 +12,7 @@
 * [M1.W1.D3 Javascript Objects](m1w1d3-javascript-objects.md)
 * [M1.W1.D3 JavaScript Operators & Misc](m1w1d3-javascript-operators.md)
 * [M1.W1.D3 Javascript Data Structures](m1w1d3-javascript-arrays-objects.md)
-* m1.w1.d4-css-combinators
+* [M1.W1.D4 CSS Combinators](m1w1d4-css-combinators.md)
+* [M1.W1.D4 Javascript Iteration Methods](m1w1d4-javascript-iteration-methods.md)
+* [M1.W1.D4 JavaScript Mutator Methods](m1w1d4-javascript-mutator-methods.md)
 
