@@ -10,6 +10,7 @@
 * [M1.W1.D2 CSS Position Properties](m1w1d2-css-position-properties.md)
 * [M1.W1.D2 Git](m1w1d2-git.md)
 * [M1.W1.D3 Javascript Objects](m1w1d3-javascript-objects.md)
-* [m1w1d3 JavaScript Operators & Misc](m1w1d3-javascript-operators.md)
-* [m1w1d3-javascript-arrays-objects](m1w1d3-javascript-arrays-objects.md)
+* [M1.W1.D3 JavaScript Operators & Misc](m1w1d3-javascript-operators.md)
+* [M1.W1.D3 Javascript Data Structures](m1w1d3-javascript-arrays-objects.md)
+* m1.w1.d4-css-combinators
 

@@ -47,9 +47,9 @@ When a browser displays a document, it must combine the document's content with 
 1. The browser converts [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS) into the [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM) \(_Document Object Model_\). The DOM represents the document in the computer's memory. It combines the document's content with its style.
 2. The browser displays the contents of the DOM.
 
-![](/assets/Screen Shot 2017-11-17 at 16.36.58.png)
+## [Basic Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
-#### You can apply CSS on HTML tags, classes or a id of a HTML tag
+#### You can apply CSS on HTML Tags \([type selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors)\), Classes \([class selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors)\) IDs \([id selector](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)\), ALL elements \(\*, [universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)\) and at last, by a value of the attribute \([attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)\)
 
 
 
