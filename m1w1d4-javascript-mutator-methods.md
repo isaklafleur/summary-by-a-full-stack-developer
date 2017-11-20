@@ -1,4 +1,4 @@
-# JavaScript Mutator Methods
+# JavaScript Array Mutator Methods
 
 ---
 

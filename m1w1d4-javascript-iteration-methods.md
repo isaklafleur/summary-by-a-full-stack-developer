@@ -1,4 +1,4 @@
-# JavaScript Iteration Methods
+# JavaScript Array Iteration Methods
 
 ---
 

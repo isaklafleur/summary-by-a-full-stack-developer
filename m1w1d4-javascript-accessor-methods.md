@@ -1,4 +1,4 @@
-# JavaScript Accessor Methods
+# JavaScript Array Accessor Methods
 
 ---
 
