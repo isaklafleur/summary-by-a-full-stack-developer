@@ -15,4 +15,5 @@
 * [M1.W1.D4 CSS Combinators](m1w1d4-css-combinators.md)
 * [M1.W1.D4 Javascript Iteration Methods](m1w1d4-javascript-iteration-methods.md)
 * [M1.W1.D4 JavaScript Mutator Methods](m1w1d4-javascript-mutator-methods.md)
+* [M1.W1.D4 Javascript Accessor Methods](m1w1d4-javascript-accessor-methods.md)
 

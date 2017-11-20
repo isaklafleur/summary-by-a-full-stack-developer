@@ -2,7 +2,7 @@
 
 ---
 
-#### These methods modify the array
+These methods modify the array
 
 | Mutator Method | Description |
 | :--- | :--- |
