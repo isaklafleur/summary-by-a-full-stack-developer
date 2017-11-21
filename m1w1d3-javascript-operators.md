@@ -102,7 +102,7 @@ We can try above points with functions too. However there are some differences.
 
 ## [In](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in)
 
-The **`in` operator **returns `true` if the specified property is in the specified object or its prototype chain.
+The `in`** operator **returns `true` if the specified property is in the specified object or its prototype chain.
 
 ### Syntax
 
@@ -138,30 +138,6 @@ Symbol.iterator in trees // returns true (arrays are iterable, works only in ES2
 var mycar = {make: 'Honda', model: 'Accord', year: 1998};
 'make' in mycar  // returns true
 'model' in mycar // returns true
-```
-
----
-
-## ["use strict"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) - Strict mode for scripts
-
-To invoke strict mode for an entire script, put the _exact _statement
-
-`"use strict";`\(or`'use strict';`\) before any other statements.
-
-```js
-'use strict';
-
-// Assignment to a non-writable global
-var undefined = 5; // throws a TypeError
-var Infinity = 5; // throws a TypeError
-
-var dontDoThis = 10; // ReferenceError: dontDoThis is not defined
-
-function helloWorld() {
-  test = "world";
-  console.log("hello" + test);
-}
-helloWorld(); // ReferenceError: test is not defined
 ```
 
 
