@@ -58,6 +58,37 @@ Test.prototype.y = function() { ... }
 // etc.
 ```
 
+## [Prototypal inheritance](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance) {#Prototypal_inheritance}
+
+In "classic OO" languages, you tend to define class objects of some kind, and you can then simply define which classes inherit from which other classes \(see [C++ inheritance](http://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm) for some simple examples\). JavaScript uses a different system — "inheriting" objects do not have functionality copied over to them, instead the functionality they inherit is linked to via the prototype chain \(often referred to as **prototypal inheritance**\).
+
+```js
+// We define only the properties inside the constructor
+
+function Person(first, last, age, gender, interests) {
+  this.name = {
+    first,
+    last
+  };
+  this.age = age;
+  this.gender = gender;
+  this.interests = interests;
+};
+```
+
+```js
+// The methods are all defined on the constructor's prototype. For example:
+Person.prototype.greeting = function() {
+  alert('Hi! I\'m ' + this.name.first + '.');
+};
+```
+
+```
+// Say we wanted to create a Teacher class, like the one we described in
+// our initial object-oriented definition, which inherits all the members
+// from Person, but also includes:
+```
+
 #### Object.create\(\) {#objectcreate}
 
 The Object.create\(\) method creates a new object with the specified prototype object and properties. The method will return a new object with the specified prototype object and properties.
