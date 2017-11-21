@@ -23,7 +23,7 @@ var photo = downloadPhoto('http://coolcats.com/cat.gif')
 
 In this case the gif might take a very long time to download, and you don't want your program to pause \(aka 'block'\) while waiting for the download to finish.
 
-Instead, you store the code that should run after the download is complete in a function. This is the callback! You give it to the`downloadPhoto`function and it will run your callback \(e.g. 'call you back later'\) when the download is complete, and pass in the photo \(or an error if something went wrong\).
+Instead, you store the code that should run after the download is complete in a function. This is the callback! You give it to the `downloadPhoto` function and it will run your callback \(e.g. 'call you back later'\) when the download is complete, and pass in the photo \(or an error if something went wrong\).
 
 ```js
 downloadPhoto('http://coolcats.com/cat.gif', handlePhoto)
