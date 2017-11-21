@@ -295,7 +295,7 @@ console.log(student.getStudentInfo());
 
 ---
 
-### Arrow Function
+### [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ES6 fat arrow functions have a shorter syntax compared to function expressions and lexically bind the `this` value. Arrow functions are always anonymous and effectively turn `function (arguments) { expression }` into `arguments => expression`. If using an expression after an arrow, the return is implicit, so no `return` is required.
 
@@ -362,6 +362,62 @@ function CounterES6() {
 
 let counterB = new CounterES6();
 window.setTimeout(() => ChromeSamples.log(counterB.seconds), 1200);
+```
+
+---
+
+### [Template Literals \(String Literals\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+In JavaScript, when you want to put a variable inside of a string, it’s a pain in the ass because you have to stop your string, concatenate on the variable, and then open your string again and keep going. What ends up happening is you forget one of your closing quotes, and you get an error and it tells you it’s on line 3. You say “Of course it’s on line 3, but I don’t know where it is!”
+
+We can fix all of that with what’s called **template strings**, or **template literals **in ES6. In JavaScript we have double quotes and single quotes to make a string. Now we have a third way to make a string, and that is with back-ticks. 
+
+```js
+// Simple string substitution
+var name = "Brendan";
+console.log(`Yo, ${name}!`);
+
+// => "Yo, Brendan!"
+```
+
+```js
+var a = 10;
+var b = 10;
+console.log(`JavaScript first appeared ${a+b} years ago. Crazy!`);
+
+//=> JavaScript first appeared 20 years ago. Crazy!
+
+console.log(`The number of JS MVC frameworks is ${2 * (a + b)} and not ${10 * (a + b)}.`);
+//=> The number of JS frameworks is 40 and not 200.
+```
+
+### Promises
+
+A promise is a proxy for a value not necessarily known at its creation time. With promises, rather than an asynchronous call accepting a callback, it instead returns a promise. The calling code can then wait until that promise is fulfilled before executing the next step. To do so, the promise has a method named then, which accepts a function that will be invoked when the promise has been fulfilled.
+
+```js
+// common callback hell when handling asynchronous code  
+function isUserTooYoung(id, callback) {
+    openDatabase(function(db) {
+        getCollection(db, 'users', function(col) {
+            find(col, {'id': id},function(result) {
+                result.filter(function(user) {
+                    callback(user.age < cutoffAge)
+                })
+            })
+        })
+    })
+}
+
+// Solve the same problem, but using Promises
+function isUserTooYoung(id) {
+    return openDatabase()
+        .then(getCollection)
+        .then(find.bind(null, {'id': id}))
+        .then(function(user) {
+            return user.age < cutoffAge;
+        });
+}
 ```
 
 
