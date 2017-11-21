@@ -18,7 +18,21 @@ Responsive web apps use technologies like media queries and viewport to make sur
 | [Viewport](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) | Mobile browsers render pages in a virtual "window" \(the viewport\), usually wider than the screen, so they don't need to squeeze every page layout into a tiny window \(which would break many non-mobile-optimized sites\). Users can pan and zoom to see different areas of the page. |
 | [Mobile First](https://zurb.com/word/mobile-first) | Mobile first, a form of progressive enhancement, is a web-development and web-design approach that focuses on prioritizing design and development for mobile screen sizes over design and development for desktop screen sizes |
 
+```css
+// viewport meta tag in the <header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+```
 
+```css
+// border-box sizing
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
 
 [Here you can play around with Flex Froggy to learn Flexbox](http://flexboxfroggy.com)
 
