@@ -102,5 +102,7 @@ function b() {
 }
 ```
 
-To avoid this, you can add "no-shadow": "error" in the ES Lint rules.
+To avoid this, you can add "no-shadow": "error" in the ES Lint rules so you get an error if this is done. Or use "use strict" on top of every file, which will generate an error if you do shadow variables by mistake in future.
+
+
 
