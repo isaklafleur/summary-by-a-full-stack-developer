@@ -46,5 +46,37 @@ This example is meant to illustrate two important concepts:
 
 * The order in which things happen does not read top-to-bottom, it jumps around based on when things complete
 
+## [setTimeout\(\)](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) method
+
+The setTimeout\(\) method calls a function or evaluates an expression after a specified number of milliseconds.
+
+**Tip: **1000 ms = 1 second.
+
+**Tip: **The function is only executed once. If you need to repeat execution, use the [setInterval\(\)](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) method.
+
+**Tip: **Use the [clearTimeout\(\)](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout) method to prevent the function from running.
+
+```js
+// Display an alert box after 3 seconds (3000 milliseconds)
+setTimeout(function(){ alert("Hello"); }, 3000);
+```
+
+## [setInterval\(\)](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) method
+
+The setInterval\(\) method calls a function or evaluates an expression at specified intervals \(in milliseconds\).
+
+The setInterval\(\) method will continue calling the function until [clearInterval\(\)](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval) is called, or the window is closed.
+
+The ID value returned by setInterval\(\) is used as the parameter for the clearInterval\(\) method.
+
+**Tip: **1000 ms = 1 second.
+
+**Tip: **To execute a function only once, after a specified number of milliseconds, use the [setTimeout\(\)](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) method.
+
+```js
+// Alert "Hello" every 3 seconds (3000 milliseconds):
+setInterval(function(){ alert("Hello"); }, 3000);
+```
+
 
 
