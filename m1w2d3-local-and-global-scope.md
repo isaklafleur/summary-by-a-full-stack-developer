@@ -44,5 +44,7 @@ function myFunction() {
 }
 ```
 
+## JavaScript Variables
 
+In JavaScript, objects and functions are also variables. Scope determines the accessibility of variables, objects, and functions from different parts of the code.
 
