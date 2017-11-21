@@ -47,5 +47,19 @@ What exactly is a constant? It's a variable that's read-only after its initial v
 }
 ```
 
-You are not allowed to change the value the variable holds once it's been set, at declaration time. A `const` declaration must have an explicit initialisation. If you wanted a _constant _with the `undefined` value, you'd have to declare `const a = undefined` to get it.
+You are not allowed to change the value the variable holds once it's been set, at declaration time. A `const` declaration must have an explicit initialisation. If you wanted a \_constant \_with the `undefined` value, you'd have to declare `const a = undefined` to get it.
+
+Constants are not a restriction on the value itself, but on the variable's assignment of that value. In other words, the value is not frozen or immutable because of `const` , just the assignment of it. If the value is complex, such as an object or array, the contents of the value can still be modified.
+
+```js
+{
+  const a = [1,2,3];
+  a.push( 4 );
+  console.log( a ); // [1,2,3,4]
+  
+  a = 42; // TypeError!
+}
+```
+
+
 
