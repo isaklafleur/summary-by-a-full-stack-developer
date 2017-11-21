@@ -1,0 +1,6 @@
+# Local and Global Scope
+
+---
+
+
+
