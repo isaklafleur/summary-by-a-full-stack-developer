@@ -38,7 +38,8 @@ person2.greeting()
 // a fairly common pattern for more object definitions is to define
 // the properties inside the constructor, and the methods on the prototype.
 // This makes the code easier to read, as the constructor only contains the
-// property definitions, and the methods are split off into separate blocks. For example:
+// property definitions, and the methods are split off into separate blocks.
+// For example:
 
 // Constructor with property definitions
 
