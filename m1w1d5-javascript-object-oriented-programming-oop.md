@@ -15,9 +15,7 @@ function Person(name) {
 // is used to make constructor functions easier to recognize in code.
 ```
 
-The constructor function is JavaScript's version of a class. You'll notice that it has all the features you'd expect in a function, although it doesn't return anything or explicitly create an object — it basically just defines properties and methods. You'll see the
-
-`this` keyword being used here as well — it is basically saying that whenever one of these object instances is created, the object's `name` property will be equal to the name value passed to the constructor call, and the `greeting()` method will use the name value passed to the constructor call too.
+The constructor function is JavaScript's version of a class. You'll notice that it has all the features you'd expect in a function, although it doesn't return anything or explicitly create an object — it basically just defines properties and methods. You'll see the `this` keyword being used here as well — it is basically saying that whenever one of these object instances is created, the object's `name` property will be equal to the name value passed to the constructor call, and the `greeting()` method will use the name value passed to the constructor call too.
 
 ```js
 // So how do we call a constructor to create some objects?
@@ -41,8 +39,6 @@ person2.greeting()
 // the properties inside the constructor, and the methods on the prototype.
 // This makes the code easier to read, as the constructor only contains the
 // property definitions, and the methods are split off into separate blocks. For example:
-
-
 
 // Constructor with property definitions
 
@@ -68,8 +64,6 @@ The Object.create\(\) method creates a new object with the specified prototype o
 As we can see in our example, when we call`Object.create()`giving the `Animal.protoype` as an argument our`Dog.prototype` will be created with`Animal` prototype and properties.
 
 After this, we call`Dog.prototype.constructor = Dog` so the the Dog objects will take the Dog’s constructor as default instead of Animal’s
-
-
 
 [Recommended read of OOP in JavaScript](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 
