@@ -35,8 +35,8 @@ This reference tries to describe the various objects and types in as simple a wa
 | [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | the Document.createElement() method creates the HTML element specified by tagName |
 | [Node.contains()](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) | The Node.contains\(\) method returns a Boolean value indicating whether a node is a descendant of a given node or not. |
 | [Node.removeChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes a child node from an element |
-| [EventTarget.removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) | Removes an event handler that has been attached with the addEventListener\(\) method |
 | [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) | Registers an event handler to a specific event type on the element. |
+| [EventTarget.removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) | Removes an event handler that has been attached with the addEventListener\(\) method |
 | [ChildNode.remove()](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove) | Removes the element from the children list of its parent. |
 
 
@@ -47,8 +47,8 @@ This reference tries to describe the various objects and types in as simple a wa
 | [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) | Returns an array with the class name\(s\) of an element |
 | [Element.className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) | Sets or returns the value of the class attribute of an element |
 | [Element.id](https://developer.mozilla.org/en-US/docs/Web/API/Element/id) | Sets or returns the value of the id attribute of an element |
-| [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes) | The Node.childNodes read-only property returns a live collection of child nodes of the given element where the first child node is assigned index 0. |
 | [ParentNode.children](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children) | The Node.children is a read-only property that returns a live HTMLCollection of the child elements of Node. |
+| [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes) | The Node.childNodes read-only property returns a live collection of child nodes of the given element where the first child node is assigned index 0. |
 | [Node.firstChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild) | Returns the first child node of an element |
 | [Node.firstElementChild](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild) | Returns the first child element of an element |
 | [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) | Sets or returns the value of the style attribute of an element |
