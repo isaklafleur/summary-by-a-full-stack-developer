@@ -40,20 +40,20 @@ This reference tries to describe the various objects and types in as simple a wa
 
 | Properties | **Description** |
 | :--- | :--- |
-| [`element.attributes`](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes) | Returns a NamedNodeMap of an element’s attributes |
+| [E`lement.attributes`](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes) | Returns a NamedNodeMap of an element’s attributes |
 | [Node`.childNodes`](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes) | The Node.childNodes read-only property returns a live collection of child nodes of the given element where the first child node is assigned index 0. |
-| Node`.children` | The Node.children is a read-only property that returns a live HTMLCollection of the child elements of Node. |
+| [ParentNode`.children`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children) | The Node.children is a read-only property that returns a live HTMLCollection of the child elements of Node. |
 | [E`lement.classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) | Returns an array with the class name\(s\) of an element |
 | [E`lement.className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) | Sets or returns the value of the class attribute of an element |
 | [Node`.contains()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) | The Node.contains\(\) method returns a Boolean value indicating whether a node is a descendant of a given node or not. |
 | [Element.id](https://developer.mozilla.org/en-US/docs/Web/API/Element/id) | Sets or returns the value of the id attribute of an element |
 | [Node`.firstChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild) | Returns the first child node of an element |
 | [Node`.firstElementChild`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild) | Returns the first child element of an element |
-| `element.removeAttribute()` | Removes a specified attribute from an element |
-| `element.removeAttributeNode()` | Removes a specified attribute node, and returns the removed node |
-| `element.removeChild()` | Removes a child node from an element |
-| `element.removeEventListener()` | Removes an event handler that has been attached with the addEventListener\(\) method |
-| `element.setAttribute()` | Sets or changes the specified attribute, to the specified value |
+| [E`lement.removeAttribute()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute) | Removes a specified attribute from an element |
+| [E`lement.removeAttributeNode()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttributeNode) | Removes a specified attribute node, and returns the removed node |
+| [Node`.removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes a child node from an element |
+| [EventTarget`.removeEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) | Removes an event handler that has been attached with the addEventListener\(\) method |
+| [E`lement.setAttribute()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) | Sets or changes the specified attribute, to the specified value |
 
 
 
