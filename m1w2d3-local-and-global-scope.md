@@ -88,5 +88,19 @@ function helloWorld() {
 helloWorld(); // ReferenceError: test is not defined
 ```
 
+# Variable shadowing {#firstHeading}
 
+In computer programming, variable shadowing occurs when a variable declared within a certain scope \(decision block, method, or inner class\) has the same name as a variable declared in an outer scope. At the level of identifiers \(names, rather than variables\), this is known as name masking. This outer variable is said to be shadowed by the inner variable, while the inner identifier is said to mask the outer identifier. This can lead to confusion, as it may be unclear which variable subsequent uses of the shadowed variable name refer to, which depends on the name resolution rules of the language.
+
+```
+// variable a is declared both in global and local scope.
+// This a bad practice and should be avoided.
+
+var a = 3;
+function b() {
+    var a = 10;
+}
+```
+
+To avoid this, you can add "no-shadow": "error" in the ES Lint rules.
 
