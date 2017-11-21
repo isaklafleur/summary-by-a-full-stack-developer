@@ -2,5 +2,5 @@
 
 ---
 
-No jQuery and Bootstrap as I don't want to touch it...
+No jQuery and Bootstrap, only pure Vanilla JS and DOM manipulation...
 
