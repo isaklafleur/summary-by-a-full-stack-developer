@@ -131,7 +131,7 @@ var clonedObj = { ...obj1 };
 
 ---
 
-## Classes
+## [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 In ES5 and earlier, constructor functions defined “classes” like this:
 
@@ -177,6 +177,191 @@ class Person {
 
   }
 }
+```
+
+To instantiate objects with either syntax, the code is the same.
+
+```js
+var person = new Person("Bob", "Smith");
+
+// outputs "Bob"
+console.log(person.firstName);
+
+// outputs "Smith"
+console.log(person.lastName);
+```
+
+### [**Extending Classes**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Sub_classing_with_extends)
+
+Prior to ES2015, most developers who coded JavaScript did not understand how to setup an inheritance relationship between objects. A quick conversation with a C++, Java, or C\# developer would quickly reveal the ease with which they could setup one class to inherit from another, and then instantiate an object from the subclass. Ask a typical JavaScript developer to demonstrate how to setup inheritance between two objects, and the result is usually a blank stare. The reason for this great difference is that configuring prototype inheritance is not straightforward, and the concept of prototype inheritance is foreign to most JavaScript developers. Here is some example code with comments to explain the process of configuring inheritance.
+
+```js
+// Person constructor function
+// when called with the "new" operator,
+// a new Person object is created
+
+function Person(firstName, lastName) {
+  // the "new" operator sets the reference of
+  // "this" to a new object
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+// this property referencing the function will
+// be configured on person's prototype object,
+// and will be inherited by students
+Person.prototype.getFullName = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+// Student constructor function
+// when called with the "new" operator,
+// a new Student object is created
+
+function Student(studentId, firstName, lastName) {
+  // the "new" operator sets the reference of "this" to
+  // a new object, the new object is then passed to the
+  // Person constructor function through the use of call,
+  // so the first name and last name properties can be set
+  this._super.call(this, firstName, lastName);
+  this.studentId = studentId;
+}
+
+// students will inherit from a new object
+// which inherits from the parent
+Student.prototype = Object.create(Person.prototype);
+
+// set the constructor property back to the Student
+// constructor function
+Student.prototype.constructor = Student;
+
+// "_super" is NOT part of ES5, its a convention
+// defined by the developer
+// set the "_super" to the Person constructor function
+Student.prototype._super = Person;
+
+// this will exist on the student's prototype object
+Student.prototype.getStudentInfo = function() {
+  return this.studentId + " " + this.lastName + ", " + this.firstName;
+};
+
+// instantiate a new Student object
+var student = new Student(1, "Bob", "Smith");
+
+// invoking function on parent prototype
+// outputs "Bob Smith"
+console.log(student.getFullName());
+
+// invoking function on child prototype
+// output "1 Smith, Bob"
+console.log(student.getStudentInfo());
+```
+
+The above code is hard to follow, and it takes a lot of work just for one object to inherit from another while supporting constructor functions. Most JavaScript developers cannot create this code from memory, and many have never seen or considered anything like this when working with JavaScript.
+
+To solve this problem and bring prototype inheritance into greater usage, ES2015 has introduced the **extends **keyword to the syntax of its new class structure. The following code demonstrates the same inheritance as the first code sample, but uses ES2015 syntax.
+
+```js
+"use strict";
+
+class Person {
+
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  getFullName() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+class Student extends Person {
+  constructor(studentId, firstName, lastName) {
+    super(firstName, lastName);
+    this.studentId = studentId;
+  }
+
+  getStudentInfo() {
+    return this.studentId + " " + this.lastName + ", " + this.firstName;
+  }
+
+}
+
+var student = new Student(1, "Bob", "Smith");
+console.log(student.getFullName());
+console.log(student.getStudentInfo());
+```
+
+---
+
+### Arrow Function
+
+ES6 fat arrow functions have a shorter syntax compared to function expressions and lexically bind the `this` value. Arrow functions are always anonymous and effectively turn `function (arguments) { expression }` into `arguments => expression`. If using an expression after an arrow, the return is implicit, so no `return` is required.
+
+```js
+'use strict';
+// Filter an array for only odd numbers
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Before...
+let es5OddNumbers = numbers.filter(function(number) {
+  return number % 2;
+});
+ChromeSamples.log(es5OddNumbers);
+
+// After...
+let es6OddNumbers = numbers.filter(number => number % 2);
+ChromeSamples.log(es6OddNumbers);
+
+// Parens are optional depending on the number of arguments:
+let square = x => x * x;
+ChromeSamples.log(square(10));
+
+let add = (a, b) => a + b;
+ChromeSamples.log(add(3, 4));
+
+// `return` is implied if using an expression after an arrow.
+let developers = [{name: 'Rob'}, {name: 'Jake'}];
+// Before...
+let es5Output = developers.map(function(developer) {
+  return developer.name;
+});
+ChromeSamples.log(es5Output);
+
+// After...
+let es6Output = developers.map(developer => developer.name);
+ChromeSamples.log(es6Output);
+
+// Fat arrows change how `this` is handled.
+
+// Before...
+// In ES5, `bind()` or var that = this; are necessary as functions
+// create their own `this`. We need to store the parent `this` in
+// a variable that can be referenced in the callback or take care
+// of binding ourselves.
+function CounterES5() {
+  this.seconds = 0;
+  window.setInterval(function() {
+    this.seconds++;
+  }.bind(this), 1000); // or }.bind(this), 1000) and skip that = this
+}
+
+var counterA = new CounterES5();
+window.setTimeout(function() {
+  ChromeSamples.log(counterA.seconds);
+}, 1200);
+
+// After...
+// ES6 Arrows instead bind `this` to the immediate enclosing
+// lexical scope:
+function CounterES6() {
+  this.seconds = 0;
+  window.setInterval(() => this.seconds++, 1000);
+}
+
+let counterB = new CounterES6();
+window.setTimeout(() => ChromeSamples.log(counterB.seconds), 1200);
 ```
 
 
