@@ -21,5 +21,6 @@
 * [M1.W2.D1 Document Object Model \(DOM\)](m1w2d1-document-object-model-dom.md)
 * [M1.W2.D2 Debugging and ES Lint](m1w2d2-debugging-error-handling-and-es-lint.md)
 * [M1.W2.D2 Async & Callbacks](m1w2d2-async-and-callbacks.md)
-* [m1w2d3 JavaScript Scope \(Local & Global\) & "use strict"](m1w2d3-local-and-global-scope.md)
+* [M1.W2.D3 JavaScript Scope \(Local & Global\) & "use strict"](m1w2d3-local-and-global-scope.md)
+* [M1.W2.D4 JavaScript Closures, Hoisting & IIFEs ](m1w2d4-javascript-closures-hoisting-and-iifes.md)
 
