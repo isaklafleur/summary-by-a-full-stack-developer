@@ -85,6 +85,10 @@ setInterval(function(){ alert("Hello"); }, 3000);
 // function once every 1 second, just like a digital watch).
 // Use clearInterval() to stop the timer.
 
+// The clearInterval() method clears a timer set with the setInterval() method.
+// The ID value returned by setInterval() is used as the parameter for the
+// clearInterval() method.
+
 var myVar = setInterval(function(){ myTimer() }, 1000);
 
 function myTimer() {
