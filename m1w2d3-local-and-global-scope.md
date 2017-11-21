@@ -48,3 +48,27 @@ function myFunction() {
 
 In JavaScript, objects and functions are also variables. Scope determines the accessibility of variables, objects, and functions from different parts of the code.
 
+## ["use strict"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) - Strict mode for scripts
+
+To invoke strict mode for an entire script, put the \_exact \_statement
+
+`"use strict";`\(or`'use strict';`\) before any other statements.
+
+```js
+'use strict';
+
+// Assignment to a non-writable global
+var undefined = 5; // throws a TypeError
+var Infinity = 5; // throws a TypeError
+
+var dontDoThis = 10; // ReferenceError: dontDoThis is not defined
+
+function helloWorld() {
+  test = "world";
+  console.log("hello" + test);
+}
+helloWorld(); // ReferenceError: test is not defined
+```
+
+
+
