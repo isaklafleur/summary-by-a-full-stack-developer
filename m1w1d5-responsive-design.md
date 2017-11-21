@@ -19,18 +19,40 @@ Responsive web apps use technologies like media queries and viewport to make sur
 | [Mobile First](https://zurb.com/word/mobile-first) | Mobile first, a form of progressive enhancement, is a web-development and web-design approach that focuses on prioritizing design and development for mobile screen sizes over design and development for desktop screen sizes |
 
 ```css
-// viewport meta tag in the <header>
+// viewport meta tag - boilerplate code
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 ```
 
 ```css
-// border-box sizing
+// border-box sizing - boilerplate code
 
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+```
+
+```css
+// Media Queries - example:
+
+// This applies from 0px to 767px
+body {
+  background-color: red;
+}
+
+/* ----------- Tablet Screens ----------- */
+@media screen and (min-device-width: 768px) {
+  body {
+    background-color: pink;
+  }
+}
+/* ----------- Desktop/Laptop Screens ----------- */
+@media screen and (min-device-width: 1024px) {
+  body {
+    background-color: blue;
+  }
 }
 ```
 
