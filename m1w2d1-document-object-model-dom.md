@@ -21,7 +21,7 @@ In other words: **The HTML DOM is a standard for how to get, change, add, or del
 
 This reference tries to describe the various objects and types in as simple a way as possible. But there are a number of different data types being passed around the API that you should be aware of. For the sake of simplicity, syntax examples in this API reference typically refer to nodes as `element`s, to arrays of nodes as `nodeList`s \(or simply `element`s\), and to `attribute` nodes simply as `attribute`s.
 
-## Accessing DOM objects with JavaScript
+## Accessing & Modifying DOM objects with JavaScript
 
 | Methods | **Description** |
 | :--- | :--- |
