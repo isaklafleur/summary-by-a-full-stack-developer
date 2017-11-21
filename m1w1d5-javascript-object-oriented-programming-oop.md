@@ -96,15 +96,58 @@ function Teacher(first, last, age, gender, interests, subject) {
   Person.call(this, first, last, age, gender, interests);
   this.subject = subject;
 }
+// This function basically allows you to call a function defined somewhere else,
+// but in the current context. The first parameter specifies the value of this
+// that you want to use when running the function, and the other parameters are
+// those that should be passed to the function when it is invoked.
 ```
 
-#### Object.create\(\) {#objectcreate}
+### Setting Teacher\(\)'s prototype and constructor reference
 
-The Object.create\(\) method creates a new object with the specified prototype object and properties. The method will return a new object with the specified prototype object and properties.
+```js
+// We need to get Teacher() to inherit the methods defined on
+// Person()'s prototype. So how do we do that?
 
-As we can see in our example, when we call`Object.create()`giving the `Animal.protoype` as an argument our`Dog.prototype` will be created with`Animal` prototype and properties.
+Teacher.prototype = Object.create(Person.prototype);
 
-After this, we call`Dog.prototype.constructor = Dog` so the the Dog objects will take the Dog’s constructor as default instead of Animal’s
+// Here our friend create() comes to the rescue again. In this case we
+// are using it to create a new object and make it the value of Teacher.prototype.
+
+// We need to do one more thing before we move on. After adding the last line,
+// Teacher.prototype's constructor property is now equal to Person(),
+// because we just set Teacher.prototype to reference an object that
+// inherits its properties.
+
+Teacher.prototype.constructor = Teacher;
+```
+
+```js
+// To finish off our code, we need to define a new greeting() function on
+// the Teacher() constructor.
+
+// The easiest way to do this is to define it on Teacher()'s prototype
+
+Teacher.prototype.greeting = function() {
+  var prefix;
+
+  if (this.gender === 'male' || this.gender === 'Male' || this.gender === 'm' || this.gender === 'M') {
+    prefix = 'Mr.';
+  } else if (this.gender === 'female' || this.gender === 'Female' || this.gender === 'f' || this.gender === 'F') {
+    prefix = 'Mrs.';
+  } else {
+    prefix = 'Mx.';
+  }
+
+  alert('Hello. My name is ' + prefix + ' ' + this.name.last + ', and I teach ' + this.subject + '.');
+};
+```
+
+```js
+// Try creating an object instance from Teacher() by putting the following
+// at the bottom of your JavaScript.
+
+var teacher1 = new Teacher('Dave', 'Griffiths', 31, 'male', ['football', 'cookery'], 'mathematics');
+```
 
 [Recommended read of OOP in JavaScript](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 
