@@ -25,11 +25,11 @@ Accessing a `let`- declared variable earlier than its `let ..` declaration/initi
 
 ```js
 {
-	console.log( a );	// undefined
-	console.log( b );	// ReferenceError!
+    console.log( a );    // undefined
+    console.log( b );    // ReferenceError!
 
-	var a;
-	let b;
+    var a;
+    let b;
 }
 ```
 
@@ -47,5 +47,5 @@ What exactly is a constant? It's a variable that's read-only after its initial v
 }
 ```
 
-
+You are not allowed to change the value the variable holds once it's been set, at declaration time. A `const` declaration must have an explicit initialisation. If you wanted a _constant _with the `undefined` value, you'd have to declare `const a = undefined` to get it.
 
