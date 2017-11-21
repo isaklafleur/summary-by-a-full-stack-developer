@@ -6,7 +6,11 @@ It exist many different Unit Testing Frameworks. The most popular are [Jasmine](
 
 We will cover in this unit Mocha.
 
+Install with [npm](https://npmjs.org/) globally:
 
+```bash
+$ npm install --global mocha
+```
 
 
 

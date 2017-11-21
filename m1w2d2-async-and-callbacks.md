@@ -1,4 +1,4 @@
-# Async & Callbacks
+# Asynchronous Code & Callbacks
 
 ---
 
