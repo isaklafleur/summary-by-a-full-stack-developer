@@ -59,7 +59,6 @@ ESLint is an open source JavaScript linting utility originally created by Nichol
 2. replace the content in the `.eslintrc.json` file with this snippet.
 
 ```js
-// Example of .eslintrc.json settings
 {
   "extends": "standard",
   "env": {
