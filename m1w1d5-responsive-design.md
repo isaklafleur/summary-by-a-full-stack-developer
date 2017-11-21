@@ -1,4 +1,4 @@
-# Responsive Web \(App\) Design
+# Responsive Web \(App\) Design \(Flexbox, Media Queries, Mobile First, etc\)
 
 ---
 
