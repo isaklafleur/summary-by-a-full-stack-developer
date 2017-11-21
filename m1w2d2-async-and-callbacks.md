@@ -78,5 +78,20 @@ The ID value returned by setInterval\(\) is used as the parameter for the clearI
 setInterval(function(){ alert("Hello"); }, 3000);
 ```
 
+```js
+// Example using both methods setInterval and clearInterval.
+var myVar = setInterval(function(){ myTimer() }, 1000);
+
+function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction() {
+    clearInterval(myVar);
+}
+```
+
 
 
