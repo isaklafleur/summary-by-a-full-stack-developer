@@ -24,4 +24,5 @@
 * [M1 JavaScript Scope \(Local & Global\) & "use strict"](m1w2d3-local-and-global-scope.md)
 * [M1 JavaScript Closures, Hoisting & IIFEs ](m1w2d4-javascript-closures-hoisting-and-iifes.md)
 * [M2 JavaScript Testing \(Unit Testing & TDD\)](m1w2d5-javascript-testing-unit-testing-and-tdd.md)
+* [M2 Node.js](m2-nodejs.md)
 
