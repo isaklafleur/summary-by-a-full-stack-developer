@@ -17,14 +17,35 @@ The HTML DOM is a standard **object **model and **programming interface **for HT
 
 In other words: **The HTML DOM is a standard for how to get, change, add, or delete HTML elements.**
 
+## Important Data Types {#Important_Data_Types}
+
+This reference tries to describe the various objects and types in as simple a way as possible. But there are a number of different data types being passed around the API that you should be aware of. For the sake of simplicity, syntax examples in this API reference typically refer to nodes as `element`s, to arrays of nodes as `nodeList`s \(or simply `element`s\), and to `attribute` nodes simply as `attribute`s.
+
+The following table briefly describes these data types.
+
+| Important Data Types |
+| :--- |
+
+
+| `document` | When a member returns an object of type `document`\(e.g., the **`ownerDocument `**property of an element returns the `document` to which it belongs\), this object is the  root` document` object itself. The [DOM `document`Reference](https://developer.mozilla.org/en-US/docs/DOM/document) chapter describes the `document` object. |
+| :--- | :--- |
+| `element` | `element` refers to an element or a node of type `element` returned by a member of the DOM API. Rather than saying, for example, that the [document.createElement\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method returns an object reference to a`node`, we just say that this method returns the`element`that has just been created in the DOM.`element`objects implement the DOM`Element`interface and also the more basic`Node`interface, both of which are included together in this reference. |
+| `nodeList` | A`nodeList`is an array of elements, like the kind that is returned by the method [document.getElementsByTagName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName). Items in a`nodeList` are accessed by index in either of two ways: list.item\(1\) or list\[1\]. These two are equivalent. In the first,**`item()`**is the single method on the `nodeList `object. The latter uses the typical array syntax to fetch the second item in the list. |
+| `attribute` | When an `attribute` is returned by a member \(e.g., by the **`createAttribute()`**method\), it is an object reference that exposes a special \(albeit small\) interface for attributes. Attributes are nodes in the DOM just like elements are, though you may rarely use them as such. |
+| `namedNodeMap` | A `namedNodeMap` is like an array, but the items are accessed by name or index, though this latter case is merely a convenience for enumeration, as they are in no particular order in the list. A `namedNodeMap` has an item\(\) method for this purpose, and you can also add and remove items from a `namedNodeMap`. |
+
 ## Accessing DOM objects with JavaScript
 
-| Method | Description |
+##### A list of common used Properties and Methods
+
+| Methods | **Description** |
 | :--- | :--- |
-| [document.getElementById\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | Returns a reference to the element by its ID; the ID is a string which can be used to uniquely identify the element, found in the HTML id attribute. |
-| [document.getElementsByClassName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) | Returns an array-like object of all child elements which have all of the given class names. |
-| [document.getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName) | Returns an array-like object of all child elements which have all of the given class names. |
-| [`EventTarget.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) | .Registers an event handler to a specific event type on the element. |
+| [element.getElementById\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | Returns a reference to the element by its ID; the ID is a string which can be used to uniquely identify the element, found in the HTML id attribute. |
+| [element.getElementsByClassName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) | Returns an array-like object of all child elements which have all of the given class names. |
+| [element.getElementsByTagName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName) | Returns an array-like object of all child elements which have all of the given class names. |
+| [`EventTarget.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) | Registers an event handler to a specific event type on the element. |
+| [`ChildNode.remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove) | Removes the element from the children list of its parent. |
+|  |  |
 
 |  |
 | :--- |
@@ -37,62 +58,62 @@ In other words: **The HTML DOM is a standard for how to get, change, add, or del
 | `element.children` | Returns a collection of an element’s child element \(excluding text and comment nodes\) |
 | `element.classList` | Returns an array with the class name\(s\) of an element |
 | `element.className` | Sets or returns the value of the class attribute of an element |
-| `element.clientHeight` | Returns the height of an element, including padding |
-| `element.clientLeft` | Returns the width of the left border of an element |
-| `element.clientTop` | Returns the width of the top border of an element |
-| `element.clientWidth` | Returns the width of an element, including padding |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 | `element.contains()` | Returns true if a node is a descendant of a node, othwerwise false |
-| `element.contentEditable` | Sets or returns whether the content of an element is editable or not |
+|  |  |
 | `element.firstChild` | Returns the first child node of an element |
 | `element.firstElementChild` | Returns the first child element of an element |
-| `element.focus()` | Gives focus to an element |
+|  |  |
 | `element.getAttribute()` | Returns the specified attribute value of an element node |
 | `element.getAttributeNode()` | Returns the specified attribute node |
-| `element.getElementsByClassName()` | Returns a collection of all child elements with the specified class name |
-| `element.getElementsByTagName()` | Returns a collection of all child elements with the specified tag name |
-| `element.getFeature()` | Returns an object which implements the APIs of a specified feature |
+|  |  |
+|  |  |
+|  |  |
 | `element.hasAttribute()` | Returns true if an element has the specified attribute, otherwise false |
 | `element.hasAttributes()` | Returns true if an element has any attributes, otherwise false |
 | `element.hasChildNodes()` | Returns true if an element has any child nodes, otherwise false |
-| `element.id` | Sets or returns the value of the id attribute of an element |
-| `element.isEqualNode()` | Checks if two elements are equal |
-| `element.isSameNode()` | Checks if two elements are the same node |
+|  |  |
+|  |  |
+|  |  |
 | `element.lastChild` | Returns the last child node of an element |
 | `element.lastElementChild` | Returns the last child element of an element |
-| `element.nextSibling` | Returns the next node at the same node tree level |
-| `element.nextElementSibling` | Returns the next element at the same node tree level |
-| `element.nodeName` | Returns the name of a node |
-| `element.nodeValue` | Sets or returns the value of a node |
-| `element.offsetHeight` | Returns the height of an element, including padding, border and scrollbar |
-| `element.offsetWidth` | Returns the width of an element, including padding, border and scrollbar |
-| `element.offsetLeft` | Returns the horizontal offset position of an element |
-| `element.offsetParent` | Returns the offset container of an element |
-| `element.offsetTop` | Returns the vertical offset position of an element |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 | `element.parentNode` | Returns the parent node of an element |
 | `element.parentElement` | Returns the parent element node of an element |
-| `element.previousSibling` | Returns the previous node at the same node tree level |
-| `element.previousElementSibling` | Returns the previous element at the same node tree level |
+|  |  |
+|  |  |
 | `element.querySelector()` | Returns the first child element that matches a specified CSS selector\(s\) of an element |
 | `element.querySelectorAll()` | Returns all child elements that matches a specified CSS selector\(s\) of an element |
 | `element.removeAttribute()` | Removes a specified attribute from an element |
 | `element.removeAttributeNode()` | Removes a specified attribute node, and returns the removed node |
 | `element.removeChild()` | Removes a child node from an element |
-| `element.replaceChild()` | Replaces a child node in an element |
+|  |  |
 | `element.removeEventListener()` | Removes an event handler that has been attached with the addEventListener\(\) method |
-| `element.scrollHeight` | Returns the entire height of an element, including padding |
-| `element.scrollLeft` | Sets or returns the number of pixels an element’s content is scrolled horizontally |
-| `element.scrollTop` | Sets or returns the number of pixels an element’s content is scrolled vertically |
-| `element.scrollWidth` | Returns the entire width of an element, including padding |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 | `element.setAttribute()` | Sets or changes the specified attribute, to the specified value |
 | `element.setAttributeNode()` | Sets or changes the specified attribute node |
 | `element.style` | Sets or returns the value of the style attribute of an element |
-| `element.tabIndex` | Sets or returns the value of the tabindex attribute of an |
-| `element.tagName` | Returns the tag name of an element |
-| `element.textContent` | Sets or returns the textual content of a node and its |
-| `element.title` | Sets or returns the value of the title attribute of an element |
-| `element.toString()` | Converts an element to a string |
-| `nodelist.item()` | Returns the node at the specified index in a NodeList |
-| `nodelist.length` | Returns the number of nodes in a NodeList |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 
 
