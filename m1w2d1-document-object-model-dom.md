@@ -55,6 +55,8 @@ In other words: **The HTML DOM is a standard for how to get, change, add, or del
 | [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes) | The Node.childNodes read-only property returns a live collection of child nodes of the given element where the first child node is assigned index 0. |
 | [Node.firstChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild) | Returns the first child node of an element |
 | [Node.firstElementChild](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild) | Returns the first child element of an element |
+| [Node.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) | The Element.innerHTML property sets or gets the HTML syntax describing the element's descendants. |
+| [Node.innerText](https://developer.mozilla.org/en-US/docs/Web/API/Node/innerText) | Node.innerText is a property that represents the "rendered" text content of a node and its descendants. |
 | [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) | Sets or returns the value of the style attribute of an element |
 
 
