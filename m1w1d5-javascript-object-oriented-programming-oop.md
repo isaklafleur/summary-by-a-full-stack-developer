@@ -83,10 +83,19 @@ Person.prototype.greeting = function() {
 };
 ```
 
-```
+```js
 // Say we wanted to create a Teacher class, like the one we described in
 // our initial object-oriented definition, which inherits all the members
 // from Person, but also includes:
+// 1. A new property, subject — this will contain the subject the teacher teaches.
+// 2. An updated greeting() method, which sounds a bit more formal than the
+// standard greeting() method — more suitable for a teacher addressing some
+// students at school.
+
+function Teacher(first, last, age, gender, interests, subject) {
+  Person.call(this, first, last, age, gender, interests);
+  this.subject = subject;
+}
 ```
 
 #### Object.create\(\) {#objectcreate}
