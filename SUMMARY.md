@@ -16,7 +16,7 @@
 * [M1.W1.D4 Javascript Array Iteration Methods ](m1w1d4-javascript-iteration-methods.md)
 * [M1.W1.D4 JavaScript Array Mutator Methods](m1w1d4-javascript-mutator-methods.md)
 * [M1.W1.D4 Javascript Array Accessor Methods](m1w1d4-javascript-accessor-methods.md)
-* [M1.W1.D5 Responsive Design \(Flexbox, Media Queries, Mobile First, etc\)](m1w1d5-responsive-design.md)
+* [M1.W1.D5 Responsive Web \(App\) Design \(Flexbox, Media Queries, Mobile First, etc\)](m1w1d5-responsive-design.md)
 * [M1.W1.D5 JavaScript Object Oriented Programming \(OOP\)](m1w1d5-javascript-object-oriented-programming-oop.md)
 * [M1.W2.D1 Document Object Model \(DOM\)](m1w2d1-document-object-model-dom.md)
 
