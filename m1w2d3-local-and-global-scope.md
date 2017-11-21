@@ -11,7 +11,7 @@ In JavaScript there are two types of scope:
 
 JavaScript has function scope: Each function creates a new scope. Scope determines the accessibility \(visibility\) of these variables. Variables defined inside a function are not accessible \(visible\) from outside the function.
 
-## Local JavaScript Variables
+## [Local](https://developer.mozilla.org/en-US/docs/Glossary/Local_scope) JavaScript Variables
 
 Variables declared within a JavaScript function, become **LOCAL **to the function.
 
@@ -28,7 +28,7 @@ function myFunction() {
 
 Since local variables are only recognised inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.
 
-## Global JavaScript Variables
+## [Global](https://developer.mozilla.org/en-US/docs/Glossary/Global_scope) JavaScript Variables
 
 A variable declared outside a function, becomes **GLOBAL**.
 
