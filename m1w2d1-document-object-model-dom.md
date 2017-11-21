@@ -17,10 +17,6 @@ The HTML DOM is a standard **object **model and **programming interface **for HT
 
 In other words: **The HTML DOM is a standard for how to get, change, add, or delete HTML elements.**
 
-## [Important Data Types](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#Important_Data_Types) {#Important_Data_Types}
-
-This reference tries to describe the various objects and types in as simple a way as possible. But there are a number of different data types being passed around the API that you should be aware of. For the sake of simplicity, syntax examples in this API reference typically refer to nodes as `element`s, to arrays of nodes as `nodeList`s \(or simply `element`s\), and to `attribute` nodes simply as `attribute`s.
-
 ## Accessing & Modifying DOM objects with JavaScript
 
 * [All Element Methods & Properties](https://developer.mozilla.org/en-US/docs/Web/API/Element)
@@ -31,13 +27,13 @@ This reference tries to describe the various objects and types in as simple a wa
 * [All ChildNode Methods](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode)
 * [All ParentNode Methods & Properties](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode)
 
-
+**Frequently used Methods and Properties**
 
 | Methods | Description |
 | :--- | :--- |
-| [element.getElementById\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | Returns a reference to the element by its ID; the ID is a string which can be used to uniquely identify the element, found in the HTML id attribute. |
-| [element.getElementsByClassName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) | Returns an array-like object of all child elements which have all of the given class names. |
-| [element.getElementsByTagName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName) | Returns an array-like object of all child elements which have all of the given class names. |
+| [Element.getElementById\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | Returns a reference to the element by its ID; the ID is a string which can be used to uniquely identify the element, found in the HTML id attribute. |
+| [Element.getElementsByClassName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) | Returns an array-like object of all child elements which have all of the given class names. |
+| [Element.getElementsByTagName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName) | Returns an array-like object of all child elements which have all of the given class names. |
 | [Element.querySelectorAll\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll) | Returns a NodeList of nodes which match the specified selector string relative to the element. |
 | [Element.removeAttribute\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute) | Removes a specified attribute from an element |
 | [Element.removeAttributeNode\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttributeNode) | Removes a specified attribute node, and returns the removed node |
