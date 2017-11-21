@@ -295,7 +295,7 @@ console.log(student.getStudentInfo());
 
 ---
 
-### [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+## [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ES6 fat arrow functions have a shorter syntax compared to function expressions and lexically bind the `this` value. Arrow functions are always anonymous and effectively turn `function (arguments) { expression }` into `arguments => expression`. If using an expression after an arrow, the return is implicit, so no `return` is required.
 
@@ -366,11 +366,11 @@ window.setTimeout(() => ChromeSamples.log(counterB.seconds), 1200);
 
 ---
 
-### [Template Literals \(String Literals\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+## [Template Literals \(String Literals\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 In JavaScript, when you want to put a variable inside of a string, it’s a pain in the ass because you have to stop your string, concatenate on the variable, and then open your string again and keep going. What ends up happening is you forget one of your closing quotes, and you get an error and it tells you it’s on line 3. You say “Of course it’s on line 3, but I don’t know where it is!”
 
-We can fix all of that with what’s called **template strings**, or **template literals **in ES6. In JavaScript we have double quotes and single quotes to make a string. Now we have a third way to make a string, and that is with back-ticks. 
+We can fix all of that with what’s called **template strings**, or **template literals **in ES6. In JavaScript we have double quotes and single quotes to make a string. Now we have a third way to make a string, and that is with back-ticks.
 
 ```js
 // Simple string substitution
@@ -391,34 +391,39 @@ console.log(`The number of JS MVC frameworks is ${2 * (a + b)} and not ${10 * (a
 //=> The number of JS frameworks is 40 and not 200.
 ```
 
-### Promises
+## Promises
 
-A promise is a proxy for a value not necessarily known at its creation time. With promises, rather than an asynchronous call accepting a callback, it instead returns a promise. The calling code can then wait until that promise is fulfilled before executing the next step. To do so, the promise has a method named then, which accepts a function that will be invoked when the promise has been fulfilled.
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved \(e.g., a network error occurred\). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
+Promises are eager, meaning that a promise will start doing whatever task you give it as soon as the promise constructor is invoked.
+
+### How Promises Work? {#443c}
+
+A promise is an object which can be returned synchronously from an asynchronous function. It will be in one of 3 possible states:
+
+* **Fulfilled: **`onFulfilled()` will be called \(e.g., `resolve()` was called\)
+* **Rejected: **`onRejected()` will be called \(e.g., `reject()` was called\)
+* **Pending: **not yet fulfilled or rejected
+
+A promise is **settled **if it’s not pending \(it has been resolved or rejected\). Sometimes people use _resolved _and _settled _to mean the same thing: _not pending_.
+
+Once settled, a promise can not be resettled. Calling `resolve()` or `reject()` again will have no effect. The immutability of a settled promise is an important feature.
+
+### Promise Chaining {#a7ba}
 
 ```js
-// common callback hell when handling asynchronous code  
-function isUserTooYoung(id, callback) {
-    openDatabase(function(db) {
-        getCollection(db, 'users', function(col) {
-            find(col, {'id': id},function(result) {
-                result.filter(function(user) {
-                    callback(user.age < cutoffAge)
-                })
-            })
-        })
-    })
-}
-
-// Solve the same problem, but using Promises
-function isUserTooYoung(id) {
-    return openDatabase()
-        .then(getCollection)
-        .then(find.bind(null, {'id': id}))
-        .then(function(user) {
-            return user.age < cutoffAge;
-        });
-}
+save()
+  .then(handleSuccess)
+  .catch(handleErrors);
 ```
+
+![](https://cdn-images-1.medium.com/max/800/1*vRaV9sYpYKdxBj3Ld7KM1Q.png)
+
+In the above example/image, `.catch()` will handle rejections from either `save()`, or `handleSuccess()`.
+
+When then invokes the specified function, that function receives as a parameter the resolved value of the promise. So, for example, when getCollection is called, a handle to the database will be passed to it.
+
+### Promise.all
 
 
 
