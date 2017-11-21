@@ -80,6 +80,11 @@ setInterval(function(){ alert("Hello"); }, 3000);
 
 ```js
 // Example using both methods setInterval and clearInterval.
+
+// Display the current time (the setInterval() method will execute the
+// function once every 1 second, just like a digital watch).
+// Use clearInterval() to stop the timer.
+
 var myVar = setInterval(function(){ myTimer() }, 1000);
 
 function myTimer() {
