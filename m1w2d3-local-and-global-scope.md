@@ -1,4 +1,4 @@
-# JavaScript Scope \(Local & Global\)
+# JavaScript Scope \(Local & Global\) & "use strict"
 
 ---
 
@@ -48,11 +48,29 @@ function myFunction() {
 
 In JavaScript, objects and functions are also variables. Scope determines the accessibility of variables, objects, and functions from different parts of the code.
 
+## Automatically Global
+
+If you assign a value to a variable that has not been declared, it will automatically become a **GLOBAL**variable.
+
+This code example will declare a global variable **carName**, even if the value is assigned inside a function.
+
+```js
+myFunction();
+
+// code here can use carName 
+
+function myFunction() {
+    carName = "Volvo";
+}
+```
+
 ## ["use strict"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) - Strict mode for scripts
 
-To invoke strict mode for an entire script, put the \_exact \_statement
+To invoke strict mode for an entire script, put the **exact** statement
 
 `"use strict";`\(or`'use strict';`\) before any other statements.
+
+**Global variables are not created automatically in "Strict Mode".**
 
 ```js
 'use strict';
