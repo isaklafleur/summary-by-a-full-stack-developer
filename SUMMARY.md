@@ -20,4 +20,5 @@
 * [M1.W1.D5 JavaScript Object Oriented Programming \(OOP\)](m1w1d5-javascript-object-oriented-programming-oop.md)
 * [M1.W2.D1 Document Object Model \(DOM\)](m1w2d1-document-object-model-dom.md)
 * [M1.W2.D2 Debugging and ES Lint](m1w2d2-debugging-error-handling-and-es-lint.md)
+* [M1.W2.D2 Async & Callbacks](m1w2d2-async-and-callbacks.md)
 
