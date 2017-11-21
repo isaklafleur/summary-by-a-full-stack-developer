@@ -25,4 +25,5 @@
 * [M1 JavaScript Closures, Hoisting & IIFEs ](m1w2d4-javascript-closures-hoisting-and-iifes.md)
 * [M2 JavaScript Testing \(Unit Testing & TDD\)](m1w2d5-javascript-testing-unit-testing-and-tdd.md)
 * [M2 Node.js & npm](m2-nodejs.md)
+* [M2 ECMAScript 2015 \(ES6\) and beyond](m2-ecmascript-2015-es6-and-beyond.md)
 
