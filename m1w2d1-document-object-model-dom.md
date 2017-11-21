@@ -6,6 +6,17 @@ When a web page is loaded, the browser creates a **D**ocument **O**bject **M**od
 
 ![](https://www.w3schools.com/js/pic_htmltree.gif)
 
+## What is the HTML DOM?
+
+The HTML DOM is a standard **object **model and **programming interface **for HTML. It defines:
+
+* The HTML elements as **objects**
+* The **properties **of all HTML elements
+* The **methods **to access all HTML elements
+* The **events **for all HTML elements
+
+In other words: **The HTML DOM is a standard for how to get, change, add, or delete HTML elements.**
+
 ## Accessing DOM objects with JavaScript
 
 | Method | Description |
@@ -13,8 +24,6 @@ When a web page is loaded, the browser creates a **D**ocument **O**bject **M**od
 | [document.getElementById\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) | Returns a reference to the element by its ID; the ID is a string which can be used to uniquely identify the element, found in the HTML id attribute. |
 | [document.getElementsByClassName\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) | Returns an array-like object of all child elements which have all of the given class names. |
 | [document.getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName) | Returns an array-like object of all child elements which have all of the given class names. |
-
-
 
 |  |
 | :--- |
