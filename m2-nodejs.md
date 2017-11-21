@@ -48,5 +48,5 @@ beer.random();
 
 When you do install npm packages, a folder called node\_modules is created and all the npm packages are installed there. This folder you should NEVER commit and send to GitHub.
 
-To fix this, you need to create a file called `.gitignore` and add the folder name `node_modules` in it and save to avoid commit/uploading any npm packages in future to git/GitHub.
+To fix this, you need to create a file called `.gitignore` in your project folder and add the folder name `node_modules` in it and save to avoid commit/uploading any npm packages in future to git/GitHub.
 
