@@ -33,7 +33,7 @@ If you have any problems using npm, their [documentation](https://docs.npmjs.com
 
 1. Create a new folder
 2. run `npm init` inside the folder. This will ask you a bunch of questions, and then write a package.json for you. Just answer yes on all of them for this project.
-3. run `npm install --save beer-names` to install the npm package called beer-names. Using the flag --save will save also the npm package into your package.json file.
+3. run `npm install --save beer-names` to install the npm package called [beer-names](https://www.npmjs.com/package/beer-names). Using the flag --save will save also the npm package into your package.json file.
 4. Create a new file `beerName.js` and add the below code
 5. Run the script with: `node beerName.js` and a random beer name should be printed out in the console. :-\)
 
