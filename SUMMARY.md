@@ -22,6 +22,6 @@
 * [M1 Debugging and ES Lint](m1w2d2-debugging-error-handling-and-es-lint.md)
 * [M1 Asynchronous Code & Callbacks](m1w2d2-async-and-callbacks.md)
 * [M1 JavaScript Scope \(Local & Global\) & "use strict"](m1w2d3-local-and-global-scope.md)
-* [M1.W2.D4 JavaScript Closures, Hoisting & IIFEs ](m1w2d4-javascript-closures-hoisting-and-iifes.md)
-* [M1.W2.D5 JavaScript Testing \(Unit Testing & TDD\)](m1w2d5-javascript-testing-unit-testing-and-tdd.md)
+* [M1 JavaScript Closures, Hoisting & IIFEs ](m1w2d4-javascript-closures-hoisting-and-iifes.md)
+* [M2 JavaScript Testing \(Unit Testing & TDD\)](m1w2d5-javascript-testing-unit-testing-and-tdd.md)
 
