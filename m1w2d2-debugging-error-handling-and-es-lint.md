@@ -36,13 +36,13 @@ ESLint is an open source JavaScript linting utility originally created by Nichol
 
 ![](/assets/Screen Shot 2017-11-21 at 12.05.18.png)
 
-2. Install eslint globally on your machine: `npm install -g eslint`
+1. Install eslint globally on your machine: `npm install -g eslint`
 
-3. Install eslint localy in your project folder: `npm install eslint --save-dev`
+2. Install eslint localy in your project folder: `npm install eslint --save-dev`
 
-4. Run `eslint --init` in your project folder.
+3. Run `eslint --init` in your project folder.
 
-5. Follow the below steps:
+4. Follow the below steps:
 
 ![](/assets/Screen Shot 2017-11-21 at 12.12.49.png)
 
@@ -54,11 +54,12 @@ ESLint is an open source JavaScript linting utility originally created by Nichol
 
 ![](/assets/Screen Shot 2017-11-21 at 12.16.48.png)
 
-6. If you followed the steps you should have the above setup.
+1. If you followed the steps you should have the above setup.
 
-7. replace the content in the `.eslintrc.json` file with this snippet.
+2. replace the content in the `.eslintrc.json` file with this snippet.
 
 ```js
+// Example of .eslintrc.json settings
 {
   "extends": "standard",
   "env": {
@@ -107,7 +108,7 @@ ESLint is an open source JavaScript linting utility originally created by Nichol
 }
 ```
 
-8. Update your Visual Studio Code User Settings `Code -> Preferences -> Settings`. Change `"eslint.autoFixOnSave": false,` to `"eslint.autoFixOnSave": true,`. With this change the javascript files with be updated automatic when you save the file.
+1. Update your Visual Studio Code User Settings `Code -> Preferences -> Settings`. Change `"eslint.autoFixOnSave": false,` to `"eslint.autoFixOnSave": true,`. With this change the javascript files with be updated automatic when you save the file.
 
 For more ES Lint rules, go to [ES Lint Rules section](https://eslint.org/docs/rules/).
 
