@@ -32,6 +32,7 @@ This reference tries to describe the various objects and types in as simple a wa
 | [`ChildNode.remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove) | Removes the element from the children list of its parent. |
 | [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) | Sets or returns the value of the style attribute of an element |
 | [`Element.querySelectorAll`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll) | Returns a NodeList of nodes which match the specified selector string relative to the element. |
+|  |  |
 
 |  |
 | :--- |
@@ -45,27 +46,14 @@ This reference tries to describe the various objects and types in as simple a wa
 | [E`lement.classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) | Returns an array with the class name\(s\) of an element |
 | [E`lement.className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) | Sets or returns the value of the class attribute of an element |
 | [Node`.contains()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) | The Node.contains\(\) method returns a Boolean value indicating whether a node is a descendant of a given node or not. |
-| element.id | Sets or returns the value of the id attribute of an element |
-| `element.firstChild` | Returns the first child node of an element |
-| `element.firstElementChild` | Returns the first child element of an element |
-| `element.getAttribute()` | Returns the specified attribute value of an element node |
-| `element.getAttributeNode()` | Returns the specified attribute node |
-| `element.hasAttribute()` | Returns true if an element has the specified attribute, otherwise false |
-| `element.hasAttributes()` | Returns true if an element has any attributes, otherwise false |
-| `element.hasChildNodes()` | Returns true if an element has any child nodes, otherwise false |
-| `element.lastChild` | Returns the last child node of an element |
-| `element.lastElementChild` | Returns the last child element of an element |
-| `element.parentNode` | Returns the parent node of an element |
-| `element.parentElement` | Returns the parent element node of an element |
-| `element.querySelector()` | Returns the first child element that matches a specified CSS selector\(s\) of an element |
-| `element.querySelectorAll()` | Returns all child elements that matches a specified CSS selector\(s\) of an element |
+| [Element.id](https://developer.mozilla.org/en-US/docs/Web/API/Element/id) | Sets or returns the value of the id attribute of an element |
+| [Node`.firstChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild) | Returns the first child node of an element |
+| [Node`.firstElementChild`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild) | Returns the first child element of an element |
 | `element.removeAttribute()` | Removes a specified attribute from an element |
 | `element.removeAttributeNode()` | Removes a specified attribute node, and returns the removed node |
 | `element.removeChild()` | Removes a child node from an element |
 | `element.removeEventListener()` | Removes an event handler that has been attached with the addEventListener\(\) method |
 | `element.setAttribute()` | Sets or changes the specified attribute, to the specified value |
-| `element.setAttributeNode()` | Sets or changes the specified attribute node |
-| `element.style` | Sets or returns the value of the style attribute of an element |
 
 
 
