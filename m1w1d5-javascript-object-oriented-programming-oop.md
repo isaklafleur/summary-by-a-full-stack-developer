@@ -61,8 +61,6 @@ Test.prototype.y = function() { ... }
 // etc.
 ```
 
-
-
 #### Object.create\(\) {#objectcreate}
 
 The Object.create\(\) method creates a new object with the specified prototype object and properties. The method will return a new object with the specified prototype object and properties.

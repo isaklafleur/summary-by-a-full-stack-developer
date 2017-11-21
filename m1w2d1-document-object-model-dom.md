@@ -45,6 +45,7 @@ In other words: **The HTML DOM is a standard for how to get, change, add, or del
 | [EventTarget.removeEventListener\(\)](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) | Removes an event handler that has been attached with the addEventListener\(\) method |
 | [ChildNode.remove\(\)](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove) | Removes the element from the children list of its parent. |
 
+
 | Properties | Description |
 | :--- | :--- |
 | [Element.attributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes) | Returns a NamedNodeMap of an element’s attributes |
