@@ -1,6 +1,4 @@
-# Basic JavaScript {#js--javascript-intro}
-
-[Read more MDN Web Docs](https://www.gitbook.com/book/isaklafleur/module-1/edit#)
+# [Basic JavaScript](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 
 ---
 

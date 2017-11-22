@@ -1,4 +1,4 @@
-# Debugging & ES Lint
+# Debugging & [ES Lint](https://eslint.org/)
 
 ---
 
